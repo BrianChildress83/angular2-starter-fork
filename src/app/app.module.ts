@@ -15,6 +15,7 @@ import {
   PreloadAllModules
 } from '@angular/router';
 
+import { MdButtonModule, MdCheckboxModule } from '@angular/material';
 /*
  * Platform and Environment providers/directives/pipes
  */
@@ -63,6 +64,7 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
+    MdButtonModule, MdCheckboxModule,
     RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
   ],
   /**
